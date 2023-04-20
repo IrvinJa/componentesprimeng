@@ -1,1 +1,21 @@
-<p-button label="Click me"></p-button>
+<span class="p-float-label">
+<input type="text" id="in_title" [(ngModel)]="titulo">
+</span>
+
+<p-button label="Check" icon="pi pi-check" (click)="upper()"></p-button>
+<p>{{titulo}}</p>
+<p>{{titulo}}</p>
+<p>{{titulo}}</p>
+<p>{{titulo}}</p>
+<p>{{titulo}}</p>
+<p>{{titulo}}</p>
+<p>{{titulo}}</p>
+<p>{{titulo}}</p>
+
+<div class="card flex justify-content-center">
+    <p-autoComplete [(ngModel)]="selectedItem" [suggestions]="suggestions" (completeMethod)="search($event)" placeholder="Buscar"></p-autoComplete>
+</div>
+
+<div class="card flex justify-content-center">
+    <p-calendar [(ngModel)]="date"></p-calendar>
+</div>
